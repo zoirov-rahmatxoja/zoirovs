@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="form">
+    
+        <form class="login-form" action="" method="POST">
+             <i class="fas fa-user"></i>
+            <input class="user-input" type="text" name="" placeholder="Username" required>
+            <input class="user-input" type="password" name="" placeholder="password" required>
+            <div class="option-01">
+                 <label class="remember-me"><input type="checkbox" name="">Remember me</label>
+                 <a href="#">Forgot your password?</a>
+            </div>
+            <input class="btn"   type="submit" name="" value="LOGIN" >
+        </form>
+        
+        <div class="option-2">
+             <p>Not registered?<a href="#">Create an account</a></p>
+        </div> 
+        <form class="signup-form" action="index.html" method="POST">
+            <i class="fas fa-user-plus"></i>
+            <input class="user-input" type="text" name="" placeholder="Username"required>
+             <input class="user-input" type="email" name="" placeholder="Email"required>
+            <input class="user-input" type="password" name="" placeholder="password"required>
+            <input class="btn" type="submit" name="" value="SIGN UP">
+        <div class="option-2">
+                <p>Already registred? <a href="website/index.html">Sign up</a> </p>
+            </div>
+        </form>    
+
+    </div>
+    <script type="text/javascript">
+        $('.option-2 a').click(function(){
+            $('form').animate({
+                height: "toggle", opacity: "toggle"
+            },"slow");
+
+        });
+    
+    </script>
+ </body>
+</html>
